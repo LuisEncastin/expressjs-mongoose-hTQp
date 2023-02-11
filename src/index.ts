@@ -13,6 +13,10 @@ app.get("/", async (req, res) => {
   res.json({ message: "Please visit /countries to view all the countries" });
 });
 
+app.get("/test", async (req, res) => {
+  res.json({ message: "test de endpoint" });
+});
+
 app.use("/countries", countryRoutes);
 
 app.listen(port, () => {
